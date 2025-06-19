@@ -1,0 +1,29 @@
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  text-align: center;
+  background: #f5f6ff;
+  color: #333;
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #87cefa;
+  color: white;
+  border-radius: 10px;
+}
+  #text-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  #send-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }

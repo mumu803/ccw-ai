@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>心情打卡牆</title>
+  <style>
+    body {
+      font-family: "微軟正黑體", sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #e1bee7);
+      color: #4a148c;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #inputArea {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    #moodInput {
+      width: 60%;
+      padding: 0.6rem;
+      border-radius: 12px;
+      border: none;
+      font-size: 1rem;
+    }
+    button, select {
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      border: none;
+      background-color: #ce93d8;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    #log {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .date {
+      font-weight: bold;
+      color: #7b1fa2;
+    }
+    .mood, .ai, .tag {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>💫 心情打卡牆 💫</h1>
+  <div id="inputArea">
+    <input id="moodInput" placeholder="輸入今天的心情..." />
+    <select id="moodTag">
+      <option>🌞 開心</option>
+      <option>🌧 難過</option>
+      <option>😵 迷茫</option>
+      <option>🫧 空虛</option>
+      <option>💤 疲憊</option>
+      <option>😰 焦慮</option>
+      <option>😠 生氣</option>
+      <option>🩷 想被安慰</option>
+    </select>
+    <button id="sendBtn">送出</button>
+    <button id="voiceBtn">🎤 語音輸入</button>
+    <button id="connectBtn">🔌 連接 Arduino</button>
+  </div>
+  <div id="log"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
